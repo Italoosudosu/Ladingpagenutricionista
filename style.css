@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/* header menu */
+
+/* paleta de cores do site #c3ceda  #738fa7 #0c4160 #071330*/
+
+.menu-nav{
+    gap: 50px;
+    pad: 20px;
+    letter-spacing: 0.1rem;
+    padding: 2px;
+}
+
+.menu-header{
+    font-size: 1rem;
+    padding: 10px;
+    color: #c3ceda;
+}
+
+.titulo{
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px;
+}
+
+.menu-header a{
+    color: #c3ceda;
+    text-decoration: none;
+}
+
+.menu-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #071330;
+}
+
+
+
+/* foto do site */
+.foto-1 {
+    width: 25%;
+    pad: 10px;
+    padding-left: 100px;
+    left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsividade */
+
+
+.foto-1 {
+    width: 100%;  /* Image fills container width on all screens */
+    max-width: 400px;  /* Maximum width on larger screens */
+}
+
+@media (max-width: 768px) {
+    .foto-1 {
+        max-width: 300px;  /* Adjust for smaller screens */
+    }
+}
