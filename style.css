@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 *{
     margin: 0;
     padding: 0;
@@ -10,25 +11,29 @@
 }
 
 body{
-    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url();
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
+    background-color:#071330 ;
+    color: #c3ceda;
+    overflow-x: hidden; /* Impede o overflow horizontal */
+
 }
 
 
-
-.linha {
-    border: none;
-    height: 1px; /* Define a espessura da linha */
-    background-color: #071330; /* Cor da linha */
-    width: 75%; /* Faz a linha ocupar toda a largura */
-    margin: 20px auto 20px 10%; /* Topo, Direita, Base, Esquerda */
+/* HEADER */
+.menu-header{
+    font-size: 1rem;
+    color: #c3ceda;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c4160;
 }
-/* header menu */
 
-/* paleta de cores do site #c3ceda  #738fa7 #0c4160 #071330*/
+
+.titulo{
+    text-align: left;
+    margin-right: 150px;
+}
+
 
 .menu-nav{
     letter-spacing: 0.1rem;
@@ -36,19 +41,6 @@ body{
     margin: 10px;
 }
 
-.menu-header{
-    font-size: 1rem;
-    color: #c3ceda;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #071330f5;
-}
-
-.titulo{
-    text-align: left;
-    margin-right: 150px;
-}
 
 .menu-header a{
     color: #c3ceda;
@@ -56,65 +48,91 @@ body{
     margin-right: 70px;
 }
 
-/* foto do site */
-.foto-1 {
-    width: 25%;
-    padding: 50px;
-    margin-left: 50rem;
+
+/* CONTEUDO PRINCIPAL */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
 }
 
+.text{
+    font-family: 'Poppins';
+   font-size: 1.5rem;
+   max-width: 600px;
+}
 
+.text-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+}
 
+p{
+    font-size: 1rem;
+}
 
-
-/* Conteudo */
+.foto-1{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-left: 0;
+}
 
 /* BOTAO DO WHATSAPP */
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
-
 .wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.cta {
     display: flex;
-    padding: 10px 45px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    color: white;
-    background: #19c403;
-    transition: 1s;
-    box-shadow: 6px 6px 0 black;
-    transform: skewX(-15deg);
+    justify-content: center;
+  }
+  
+  .cta {
+      display: flex;    
+      padding: 10px 25px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px;
+      color: white;
+      background: #19c403;
+      transition: 1s;
+      box-shadow: 6px 6px 0 black;
+      transform: skewX(-15deg);
+  }
+  
+  .cta:focus {
+     outline: none; 
+  }
+  
+  .cta:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 0 #57f327;
+  }
+  
+  .cta span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 0px;
+  }
+  
+  .cta:hover  span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 45px;
+  }
+  
+
+/* SERVICOS */
+
+
+
+.nutri-foto{
+    width: 70px;
+    height: auto;
 }
 
-.cta:focus {
-   outline: none; 
+li{
+    list-style: none;
 }
-
-.cta:hover {
-    transition: 0.5s;
-    box-shadow: 10px 10px 0 #57f327;
-}
-
-.cta span:nth-child(2) {
-    transition: 0.5s;
-    margin-right: 0px;
-}
-
-.cta:hover  span:nth-child(2) {
-    transition: 0.5s;
-    margin-right: 45px;
-}
-
-
-/* FIM DO BOTAO WHATSAPP */
-
-
 
 .servicos{
     align-items: center;
@@ -122,11 +140,13 @@ body{
     display: flex;
 }
 
+.servicos-nutri{
+    list-style: none;
+    max-width: 400px;
+}
 
 
-
-/* PLANOS ONLINE E PRESENCIAL */
-
+/* PLANOS */
 
 .plano-content{
     display: flex;
@@ -142,16 +162,35 @@ body{
 
 
 .planos {
-    color: #d2649a;
+    color: #c3ceda;
     padding: 50px;
     margin: 10px;
-    border: 1px solid #d14081;
+    border: 1px solid #1759f3;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(#d14081);
+    box-shadow: 0px 4px 8px rgba(#071330);
   }
 
+  .whatsapp{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #c3ceda;
+    text-decoration: none;
+    bottom: 50px;
+  }
 
+  .whatsapp i {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
+.whatsapp:hover{
+    color: white;
+
+}
 
   .planos-content :hover {
     transform: scale(1.05);
@@ -159,16 +198,48 @@ body{
     transition: 0.1s;
   }
 
-/* responsividade */
 
+
+.linha {
+    border: none;
+    height: 1px; /* Define a espessura da linha */
+    background-color: #1759f3; /* Cor da linha */
+    width: 75%; /* Faz a linha ocupar toda a largura */
+    margin: 20px auto 20px 10%; /* Topo, Direita, Base, Esquerda */
+}
+
+
+/* paleta de cores do site #c3ceda  #738fa7 #0c4160 #071330*/
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .menu-header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-1{
+        margin-top: 20px;
+    }
+
+    .planos{
+        width: 100%;
+        max-width: none;
+    }
+}
 
 .foto-1 {
     width: 100%;  /* Image fills container width on all screens */
     max-width: 400px;  /* Maximum width on larger screens */
-}
-
-@media (max-width: 768px) {
-    .foto-1 {
-        max-width: 300px;  /* Adjust for smaller screens */
-    }
 }
